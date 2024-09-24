@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .circle {
+            width: 100px;
+            height: 100px;
+            background-color: aqua;
+            border-radius: 50%;
+            position: absolute;
+            margin-top: 20%;
+            margin-left: 10%;
+            animation-name: anima;
+            animation-duration: 5s;
+            animation-delay: 2s;
+        }
+
+        @keyframes anima {
+            from {
+                left: 0;
+                transform: scale(300px);
+            }
+            
+            to {
+                left: 850px;
+                transform: scale(4);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="circle"></div>
+</body>
+
+</html>

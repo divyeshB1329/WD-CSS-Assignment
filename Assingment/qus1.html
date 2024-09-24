@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .main {
+            width: auto;
+            height: auto;
+            background: whitesmoke;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .imgMain {
+            width: 85%;
+            display: grid;
+            gap: 14px;
+        }
+
+        .imgMain div {
+            height: 250px;
+            width: auto;
+            font-size: 50px;
+        }
+
+         .one {
+            grid-column: 1/ span 4;
+            grid-row: 1;
+            background: url(https://images.unsplash.com/photo-1720048171080-78849cff8b19?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .two {
+            grid-column: 5 / 7;
+            grid-row: 1;
+            background: url(https://images.unsplash.com/photo-1726828953407-de293a320ed1?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxM3x8fGVufDB8fHx8fA%3D%3D);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .three {
+            grid-column: 1 / 2;
+            grid-row: 2;
+            background: url(https://images.unsplash.com/photo-1725714355048-6e96f31fb935?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxNnx8fGVufDB8fHx8fA%3D%3D);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+
+
+        .four {
+            grid-column: 2 / 6;
+            grid-row: 2;
+            background: url(https://images.unsplash.com/photo-1726472377339-7f2e636ab3ea?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .five {
+            grid-column: 6 / 7;
+            grid-row: 2;
+            background: url(https://images.unsplash.com/photo-1726503454520-1de6e7420074?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwyNXx8fGVufDB8fHx8fA%3D%3D);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .six {
+            grid-column: 1 /span 3;
+            grid-row: 3;
+            background: url(https://images.unsplash.com/photo-1721332154191-ba5f1534266e?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwzMXx8fGVufDB8fHx8fA%3D%3D);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .seven {
+            grid-column: 4/ span 3;
+            grid-row: 3;
+            background: url(https://images.unsplash.com/photo-1726510114046-b7938cdc1bd1?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwzMnx8fGVufDB8fHx8fA%3D%3D);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .eight {
+            grid-column: 1/ span 2;
+            grid-row: 4;
+            background: url(https://images.unsplash.com/photo-1726533870778-8be51bf99bb1?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwzNHx8fGVufDB8fHx8fA%3D%3D);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .nine {
+            grid-column: 3 / span 2;
+            grid-row: 4;
+            background: url(https://images.unsplash.com/photo-1726715245558-69afa5ded798?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwzNXx8fGVufDB8fHx8fA%3D%3D);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .ten {
+            grid-column: 5/span 2;
+            grid-row: 4;
+            background: url(https://images.unsplash.com/photo-1726508271760-52f1744f2233?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw0M3x8fGVufDB8fHx8fA%3D%3D);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .shutter {
+            background-color: #000;
+            height: auto;
+            width: 15%;
+            color: #fff;
+            text-align: right;
+            padding-top: 60px;
+            padding-right: 20px;
+        }
+
+        ul li,
+        a {
+            text-decoration: none;
+            list-style: none;
+            color: #fff;
+            padding-top: 20px;
+            transition: .2s ease-in-out;
+        }
+
+        .icon {
+            margin-top: 50px;
+        }
+
+        a i {
+            margin-left: 10px;
+        }
+    </style>
+</head>
+
+
+<body>
+    <div class="main">
+        <div class="imgMain">
+            <div class="one"></div>
+            <div class="two"></div>
+            <div class="three"></div>
+            <div class="four"></div>
+            <div class="five"></div>
+            <div class="six"></div>
+            <div class="seven"></div>
+            <div class="eight"></div>
+            <div class="nine"></div>
+            <div class="ten"></div>
+        </div>
+        <div class="shutter">
+            <h3>SHUTTER</h3>
+            <ul>
+                <li><a href="">HOME</a></li>
+                <li><a href="">PHOTOS</a></li>
+                <li><a href=""> BIO</a></li>
+                <li><a href="">BLOG</a></li>
+                <li><a href="">CONTACT</a></li>
+            </ul>
+            <div class="icon">
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-facebook"></i></a>
+                <a href=""><i class="fa-brands fa-twitter"></i></a>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

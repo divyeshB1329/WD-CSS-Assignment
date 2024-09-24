@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 90%;
+            height: 610px;
+            margin: auto;
+            margin-top: 40px;
+            margin-bottom: 40px;
+            color: white;
+            background-color: red;
+        }
+
+        .HM {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .header {
+            width: 30%;
+            height: 35px;
+            background-color: black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .menu {
+            width: 70%;
+            height: 35px;
+            background-color: red;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .hero {
+            width: 100%;
+            height: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: aqua;
+        }
+
+        .MEI {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        
+        
+
+        .main {
+            width: 50%;
+            height: 200px;
+            background-color: rgb(27, 14, 71);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .extra {
+            height: 100px;
+            padding: 50px 80px;
+            background-color: rgb(73, 156, 128);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .image {
+            height: 100px;
+            background-color: rgb(193, 228, 228);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .banner {
+            height: 13%;
+            background-color: rgb(188, 170, 78);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+
+        @media (max-width: 768px) {
+            .container{
+                height: 800px;
+                position: relative;
+            }
+            .HM{
+                flex-direction: column;
+            }
+            .header{
+                width: 100%;
+                
+            }
+            .menu{
+                position: absolute;
+                width: 200px;
+                height: 500px;
+                top: 44.4%;
+                left: 0;
+            }
+            .hero{
+                height: 40%;
+            }
+            .image{
+                width: 160px;
+                position: absolute;
+                top:81.9% ;
+                left: 75.5%;
+            }
+            .extra{
+                width: 300px;
+                position: absolute;
+                top: 82%;
+                left: 200px;
+            }
+            .main{
+                width: 460px;
+                position: absolute;
+                top: 44.5%;
+                left: 30.2%;
+            }
+            .banner{
+                width: 460px;
+                position: absolute;
+                top: 69%;
+                left: 30.2%;
+            }
+
+
+        }
+
+        @media (max-width: 480px) {
+            .container{
+                height: 700px;
+            }
+            .HM{
+                
+            }
+            .header{
+                
+            }
+            .menu{
+                width: 100%;
+                height: 70px;
+                position: static;
+            }
+            .hero{
+                height: 200px;
+            }
+            .image{
+                width: 100%;
+                position: absolute;
+                left: 0;
+                top:86% ;
+            }
+            .extra{
+                width: 100%;
+                position: absolute;
+                top:73.6% ;
+                left: 0;
+            }
+            .main{
+                width: 100%;
+                height: 110px;
+                position: static;
+            }
+            .banner{
+                width: 100%;
+                height: 100px;
+                position: static;
+            }
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="HM">
+            <header class="header">HEADER</header>
+            <nav class="menu">MENU</nav>
+        </div>
+        <section class="hero">HERO</section>
+        <div class="MEI">
+            <section class="main">MAIN</section>
+            <div class="EI">
+                <aside class="image">IMAGE</aside>
+                <aside class="extra">EXTRA</aside>
+            </div>
+        </div>
+        <footer class="banner">BANNER</footer>
+    </div>
+</body>
+
+</html>
